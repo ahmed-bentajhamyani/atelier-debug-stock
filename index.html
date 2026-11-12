@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MiniStock — Matériel de classe</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><main><header><p class="tag">ATELIER JAVASCRIPT · DÉBOGAGE</p><h1>MiniStock</h1><p>Gérez le matériel de votre salle de formation.</p></header>
+<section aria-labelledby="titre-ajout"><h2 id="titre-ajout">Ajouter du matériel</h2>
+<form id="formulaire" novalidate><div><label for="nom">Nom du matériel</label><input id="nom" type="text" placeholder="Ex. Casque" autocomplete="off"></div><div><label for="quantite">Quantité (entier positif)</label><input id="quantite" type="number" min="1" step="1" value="1"></div><button type="submit">Ajouter</button></form><p id="message" role="status"></p></section>
+<section aria-labelledby="titre-stock"><h2 id="titre-stock">Matériel disponible</h2><label for="recherche">Rechercher par nom</label><input id="recherche" type="search" placeholder="Ex. clavier"><p class="total">Quantité totale du stock : <strong id="total">0</strong></p><ul id="liste-produits"></ul></section>
+<footer>Données temporaires : un rechargement réinitialise le stock.</footer></main></body></html>
